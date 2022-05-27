@@ -1,0 +1,120 @@
+:root {
+    --color-primary: #fd377e;
+    --color-primary-2: #e34981;
+    --color-secondary: #03b898;
+    --grey-4: #212529;
+    --grey-3: #868e96;
+    --grey-2: #e9ecef;
+    --grey-1: #f8f9fa;
+}
+
+@media screen and (max-width: 768px) {
+    .transaction-list {
+        position: absolute;
+        top: 57%;
+        left: 7%;
+        border-radius: 5px;
+        width: 85%;
+    }
+    
+    .transaction-header {
+        display: flex;
+        align-items: center;
+    }
+    
+    .transaction-header h4 {
+        width: 40%;
+        color: var(--grey-3);
+    }
+    
+    .transaction-header div {
+        width: 60%;
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+    }
+    
+    .transaction-header div button {
+        width: 100%;
+        color: var(--grey-3);
+        font-size: 9px;
+        font-weight: 600;
+        width: 30%;
+        height: 2.5rem;
+        background-color: var(--grey-2);
+        border-radius: 10px;
+        border: none;
+        margin-top: 10px;
+    }
+
+    .transaction-list h1 {
+        color: var(--grey-3);
+    }
+    
+    .transaction-header button:hover {
+        cursor: pointer;
+        background-color: var(--color-primary-2);
+        color: var(--grey-1);
+    }
+    
+    .transaction-header button:focus {
+     background-color: var(--color-primary-2);
+     color: var(--grey-1);
+    }
+}
+
+@media screen and (min-width: 769px) {
+    .transaction-list {
+        position: absolute;
+        top: 18%;
+        left: 45%;
+        border-radius: 5px;
+        width: 47%;
+    }
+    
+    .transaction-header {
+        display: flex;
+        align-items: center;
+    }
+    
+    .transaction-header h4 {
+        width: 40%;
+        color: var(--grey-3);
+    }
+    
+    .transaction-header div {
+        width: 60%;
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+    }
+    
+    .transaction-header div button {
+        width: 100%;
+        color: var(--grey-3);
+        font-size: 13px;
+        font-weight: 600;
+        width: 25%;
+        height: 2.5rem;
+        background-color: var(--grey-2);
+        border-radius: 10px;
+        border: none;
+        margin-top: 10px;
+    }
+    
+    .transaction-header button:hover {
+        cursor: pointer;
+        background-color: var(--color-primary-2);
+        color: var(--grey-1);
+    }
+    
+    .transaction-header button:focus {
+     background-color: var(--color-primary-2);
+     color: var(--grey-1);
+    }
+    
+    .transaction-list h1 {
+        color: var(--grey-3);
+    }
+
+}

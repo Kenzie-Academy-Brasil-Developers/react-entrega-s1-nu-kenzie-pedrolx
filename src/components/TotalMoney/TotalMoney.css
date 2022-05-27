@@ -1,0 +1,72 @@
+:root {
+    --color-primary: #fd377e;
+    --color-primary-2: #e34981;
+    --color-secondary: #03b898;
+    --grey-4: #212529;
+    --grey-3: #868e96;
+    --grey-2: #e9ecef;
+    --grey-1: #f8f9fa;
+  }
+
+
+@media screen and (max-width: 768px) {
+    .total-money h3 {
+        grid-area: total-value;
+  }
+  
+  .total-money h4 {
+      grid-area: value-number;
+  }
+  
+  .total-money p {
+      grid-area: message;
+  }
+  
+  .total-money {
+      position: absolute;
+      top: 41%;
+      border: var(--grey-2) 1px solid;
+      left: 7%;
+      border-radius: 5px;
+      width: 86%;
+      display: grid;
+      grid-template-areas: 
+      'total-value value-number'
+      'message message';
+      align-items: center;
+      justify-content: center;
+      column-gap: 50%;
+      color: var(--grey-3);
+  }
+}
+
+@media screen and (min-width: 769px) {
+    .total-money h3 {
+        grid-area: total-value;
+  }
+  
+  .total-money h4 {
+      grid-area: value-number;
+  }
+  
+  .total-money p {
+      grid-area: message;
+  }
+  
+  .total-money {
+      position: absolute;
+      top: 68%;
+      border: var(--grey-2) 1px solid;
+      left: 7%;
+      border-radius: 5px;
+      width: 31%;
+      display: grid;
+      grid-template-areas: 
+      'total-value value-number'
+      'message message';
+      align-items: center;
+      justify-content: center;
+      column-gap: 50%;
+      color: var(--grey-3);
+  }
+}

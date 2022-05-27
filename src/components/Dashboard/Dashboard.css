@@ -1,0 +1,101 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,wght@0,200;0,300;0,400;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,600;1,700;1,800;1,900&display=swap');
+
+:root {
+  --color-primary: #fd377e;
+  --color-primary-2: #e34981;
+  --color-secondary: #03b898;
+  --grey-4: #212529;
+  --grey-3: #868e96;
+  --grey-2: #e9ecef;
+  --grey-1: #f8f9fa;
+}
+
+/*-----Header-----*/
+
+@media screen and (max-width: 768px) {
+.dashboard {
+    display: grid;
+    grid-template-areas: 'header' 'section';
+    font-family: 'Nunito Sans', sans-serif;
+}
+
+.dashboard header {
+    width: 100%;
+    display: grid;
+    grid-template-areas: 'h1 button';
+    align-items: center;
+    justify-content: space-around;
+    box-shadow: 1px 1px 9px 16px rgba(33, 37, 41, 0.08);
+}
+
+.dashboard header h1 {
+    font-weight: 900;
+}
+
+.dashboard header h1 span {
+    color: var(--color-primary);
+}
+
+.dashboard header button {
+    color: var(--grey-3);
+    font-weight: 600;
+    width: 100px;
+    height: 2.5rem;
+    background-color: var(--grey-2);
+    border-radius: 10px;
+    border: none;
+}
+
+.dashboard header button:hover {
+    cursor: pointer;
+    background-color: var(--color-primary-2);
+    color: var(--grey-1);
+
+}
+
+}
+
+@media screen and (min-width: 769px) {
+
+.dashboard {
+    display: grid;
+    grid-template-areas: 'header' 'section';
+    font-family: 'Nunito Sans', sans-serif;
+}
+
+.dashboard header {
+    width: 100%;
+    display: grid;
+    grid-template-areas: 'h1 button';
+    align-items: center;
+    justify-content: space-around;
+    box-shadow: 1px 1px 9px 16px rgba(33, 37, 41, 0.08);
+}
+
+.dashboard header h1 {
+    font-weight: 900;
+}
+
+.dashboard header h1 span {
+    color: var(--color-primary);
+}
+
+.dashboard header button {
+    color: var(--grey-3);
+    font-weight: 600;
+    width: 100px;
+    height: 2.5rem;
+    background-color: var(--grey-2);
+    border-radius: 10px;
+    border: none;
+}
+
+.dashboard header button:hover {
+    cursor: pointer;
+    background-color: var(--color-primary-2);
+    color: var(--grey-1);
+
+}
+
+}
+
